@@ -1,34 +1,22 @@
-m= int(input("Enter the first number"))
+num1= int(input("Enter the first number: "))
 operator = input("Enter operator: ")
-n= int(input("Enter the second number"))
+num2= int(input("Enter the second number: "))
 if operator == "+":
-    print(m+n)   
+    print("Addition of the two numbers is: ",num1+num2)   
 elif operator == "-":
-    print(m-n)
+    print("Subtraction of the two numbers is: ",num1-num2)
 elif operator == "*" or operator == "x":
-    print(m*n)
+    print("Multiplication of the two numbers is: ",num1*num2)
 elif operator == "/":
-    print(m/n)
+    print("Division of the two numbers is: ",num1/num2)
+print("\nTo calculate percentage of your obtained marks\n")
+total=int(input("Enter total num: "))
+Obtained=int(input("Enter the obtain marks: "))
+percentage =Obtained*100/total
+print("You got",percentage,"% marks")
+print("\nTo calculate Marks from percentage of your obtained marks\n")
 
-Total=int(input("enter total num"))
-Ob=int(input("enter the obtain marks"))
-percentage =Ob*100/Total
-print(percentage)
-
-
-Total=int(input("enter the total marks"))
-percentage=int(input("enter the percentage of marks"))
-marks = percentage/100*Total
-print(marks)
-
-
-
-  
-  
-    
-
-
-
-
-
-    
+total2=int(input("Enter the total marks: "))
+percentage2=float(input("Enter the percentage of marks: "))
+marks = percentage2/100*total2
+print("You got total of: ",marks," Marks out of: ",total2)
